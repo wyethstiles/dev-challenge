@@ -1,0 +1,14 @@
+A function called ‘main’ is defined
+@storage object is instantiated and set to null
+a while loop loops through lines of text in a text file
+the strings are split by an empty space character and put into an array
+a for each loop loops through the individual strings in the array
+a conditional statement checks to see if the string matches a regular expression
+if so, the property %t of the object @storage is incremented by 1
+if not, the property %t of the object @storage is set to 1
+
+After the while loop is done, another loop loops through all the properties in @storage and prints the values out, separated by a space with a carriage return (new line) at the end.
+
+% is a string
+$ is an array
+@ is an object

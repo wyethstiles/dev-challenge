@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Wyeth Box</title>
+<style type="text/css">
+
+#wrapper {
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(195,195,195,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(195,195,195,1);
+	box-shadow: 0px 0px 5px 0px rgba(195,195,195,1);
+	width: 90.47619%;
+	height: 90.47619%;
+	background:#fff;
+	padding:1.754386%; /* 10 / 570 */
+	margin: 0 auto;
+	overflow:hidden;
+	}
+	
+#mainContentWrapper {
+	overflow:hidden;
+	}
+	
+.leftColumn {
+	width:24.561404%; /* 140 / 570 */
+	float:left;
+	}
+	
+.greenBox {
+	background:#68884b;
+	width:100%; /* 140 / 570 */
+	}
+	
+.ltGreenBox {
+	background:#81bb4d;
+	width:100%; /* 140 / 570 */
+	margin-top: 2.5%; /* 10 / 400 */
+	}
+	
+#mainContent {
+	background:#f1ab3c;
+	width:72.727273%; /* 400 / 550 */
+	float:right;
+	}
+	
+footer {
+	overflow:hidden;
+	}
+	
+#footerLeft {
+	background: #2669a8;
+	width: 52.727273%; /*290 / 550 */
+	float:left;
+	}
+	
+#footerMid {
+	background: #4794dc;
+	width: 16.363636%; /*90 / 550 */
+	margin-left:1.8181818%;
+	float:left;
+	}
+	
+#footerRight {
+	width: 27.272727%; /*150 / 550 */
+	margin-left:1.8181818%;
+	float:left;
+	}
+	
+#topBox {
+	background:#87bff4;
+	}
+	
+#bottomBox {
+	background:#b6dbfe;
+	}
+	
+</style>
+<script src="jquery-1.11.1.min.js"></script>
+<script>
+		jQuery(document).ready(function($){
+			});
+	</script>
+<script>
+$(window).load(function() {
+function onresize (){
+   var h = $(window).height(), w = $(window).width();
+   $('#wrapper').css( "height", h * .87108014 ).css( "margin-top", h * .045296167 );
+   $('#mainContent').css( "height", h * .69686411 );
+   $('.greenBox').css( "height", h * .33972125 );
+    $('.ltGreenBox').css( "height", h * .33972125 ).css( "margin-top", h * .01754386 );
+	$('footer').css( "margin-top", h * .01754386 );
+	$('#footerLeft').css( "height", h * .15679443 );
+	$('#footerMid').css( "height", h * .15679443 );
+	$('#footerRight').css( "height", h * .15679443 );
+	$('#topBox').css( "height", h * .069686411 );
+	$('#bottomBox').css( "height", h * .069686411 ).css( "margin-top", h * .01754386 );
+}
+ $(window).resize(onresize ); 
+
+ onresize ();// first time;
+ });
+</script>
+</head>
+<body>
+<main>
+	<div id="wrapper">
+    	<section id="mainContentWrapper">
+            <aside class="leftColumn">
+                <div class="greenBox">&nbsp;</div>
+                <div class="ltGreenBox">&nbsp;</div>
+            </aside>
+            <article id="mainContent">
+            &nbsp;
+            </article>
+        </section>
+        <footer>
+        	<div id="footerLeft">&nbsp;</div>
+            <div id="footerMid">&nbsp;</div>
+            <div id="footerRight">
+            	<div id="topBox">&nbsp;</div>
+                <div id="bottomBox">&nbsp;</div>
+            </div>
+        </footer>
+    </div>
+</main>
+</body>
+</html>

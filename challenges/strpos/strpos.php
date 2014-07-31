@@ -1,8 +1,8 @@
 <?php
 
-function my_strpos(/* arguments go here! */)
+function my_strpos($mystring, $findme, $offset)
 {
-	# Your code goes here!
+	return strpos($mystring, $findme, $offset);
 }
 
 $alphabet = 'abcdefghijklmnopqrstuvwxyz';
@@ -18,3 +18,5 @@ var_dump(my_strpos($alphabet, 'u', 22));
 
 # Should print "bool(false)"
 var_dump(my_strpos($alphabet, 'A'));
+
+?>
